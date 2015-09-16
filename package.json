@@ -1,0 +1,44 @@
+{
+  "name": "react-redux-intl",
+  "version": "0.1.0",
+  "description": "Redux bindings for react-intl",
+  "repository": "overblog/react-redux-intl",
+  "author": "Florent Cailhol <florent.cailhol@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "redux",
+    "react",
+    "react-intl",
+    "intl"
+  ],
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "clean": "rimraf lib",
+    "prepublish": "npm run clean && npm run build",
+    "test": "mocha --compilers js:babel/register --recursive"
+  },
+  "peerDependencies": {
+    "react": "~0.14.0-rc1",
+    "react-intl": "~2.0.0-pr-1",
+    "react-redux": "^2.1.0",
+    "redux": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "chai": "^3.2.0",
+    "jsdom": "^6.5.0",
+    "mocha": "^2.3.2",
+    "mocha-jsdom": "^1.0.0",
+    "react": "^0.14.0-rc1",
+    "react-addons-test-utils": "^0.14.0-rc1",
+    "react-dom": "^0.14.0-rc1",
+    "react-intl": "^2.0.0-pr-1",
+    "react-redux": "^2.1.2",
+    "redux": "^3.0.0",
+    "rimraf": "^2.4.3"
+  }
+}
